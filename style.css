@@ -62,3 +62,53 @@ body {
   width: 16px;
   border: 2px solid #6070ff;
 }
+
+.profile-section {
+  background-image: url("assets/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 700px;
+  box-sizing: border-box;
+}
+
+.about-header {
+  padding-top: 150px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  margin-bottom: 12px;
+  width: 327px;
+}
+
+.about-body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.link {
+  display: inline-block;
+  color: #7f8cff;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.linkedin {
+  width: 24px;
+  height: 24px;
+}
