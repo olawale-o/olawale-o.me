@@ -219,3 +219,85 @@ body {
   color: #fff;
   background: #6070ff;
 }
+
+.about-section {
+  background-color: #fff;
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 0;
+  border-top-right-radius: 125px;
+  margin-bottom: 100px;
+}
+
+.about-myself {
+  padding: 80px 0;
+  width: 100%;
+  min-height: 700px;
+  box-sizing: border-box;
+}
+
+.about-myself .top {
+  margin: 0 0 30px 0;
+}
+
+.about-header-title {
+  padding: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  margin: 0 0 12px 0;
+  width: 327px;
+  color: #172b4d;
+}
+
+.description {
+  font-size: 16px;
+  color: #344563;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.skillset:not(:first-child) {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.language-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-title-container h4 {
+  font-size: 24px;
+  color: #000;
+}
+
+.language-title-container i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.languages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  background-color: #f7f7f9;
+  padding: 9px 12px;
+  border-radius: 8px;
+}
+
+.language img {
+  margin-right: 18px;
+}
+
+.language span {
+  font-size: 15px;
+  color: #253858;
+}
