@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.header-section {
+  background-color: #fff;
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom-left-radius: 125px;
+}
+
+.header {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.header img {
+  width: 120px;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.hamburger-menu > div {
+  margin-bottom: 3px;
+}
+
+.hamburger-menu > div:last-child {
+  margin-bottom: 0;
+}
+
+.top-line,
+.middle-line,
+.bottom-line {
+  width: 16px;
+  border: 2px solid #6070ff;
+}
+
+.profile-section {
+  background-image: url("assets/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 700px;
+  box-sizing: border-box;
+}
+
+.about-header {
+  padding-top: 150px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  margin-bottom: 12px;
+  width: 327px;
+}
+
+.about-body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.link {
+  display: inline-block;
+  color: #7f8cff;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.linkedin {
+  width: 24px;
+  height: 24px;
+}
