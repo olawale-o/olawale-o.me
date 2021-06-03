@@ -17,7 +17,7 @@
 # Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page.](https://github.com/olawale-o/Hello-world/issues)
+Feel free to check the [issues page.](https://github.com/olawale-o/portfolio-mobile-version/issues)
 
 # Show your support
 Give a :star: if you like this project!
