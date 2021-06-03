@@ -8,7 +8,7 @@
 
 # Authors
 
-:bust_in_silhouette: Author1
+:bust_in_silhouette: Omoogun Olawale
 
 - Github: [Github](https://github.com/olawale-o)
 - Twitter: [Twitter](https://twitter.com/ibreaktherules)
