@@ -227,6 +227,8 @@ body {
   margin: 0;
   border-top-right-radius: 125px;
   margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .about-myself {
