@@ -23,6 +23,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   border-bottom-left-radius: 125px;
+  margin-bottom: 100px;
 }
 
 .header {
@@ -78,8 +79,9 @@ body {
   font-size: 40px;
   line-height: 52px;
   text-align: left;
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
   width: 327px;
+  color: #172b4d;
 }
 
 .about-body {
@@ -103,7 +105,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
   width: 180px;
   justify-content: space-between;
 }
@@ -111,4 +113,193 @@ body {
 .linkedin {
   width: 24px;
   height: 24px;
+}
+
+.post-section {
+  padding: 0 24px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 100px;
+}
+
+.post-container {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.image {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0 0 20px 0;
+}
+
+.title {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.skills {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.skills > li {
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.skills > li:last-child {
+  margin-right: 0;
+}
+
+.proficiency {
+  color: #344563;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #c1c7d0;
+  border-radius: 4px;
+}
+
+.year,
+.role {
+  color: #7a869a;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.tags {
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.tag {
+  padding: 4px 12px 4px 12px;
+  font-size: 12px;
+  margin-right: 12px;
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+.btn-project {
+  outline: none;
+  background: none;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-project:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+.about-section {
+  background-color: #fff;
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 0;
+  border-top-right-radius: 125px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.about-myself {
+  padding: 80px 0;
+  width: 100%;
+  min-height: 700px;
+  box-sizing: border-box;
+}
+
+.about-myself .top {
+  margin: 0 0 30px 0;
+}
+
+.about-header-title {
+  padding: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  margin: 0 0 12px 0;
+  width: 327px;
+  color: #172b4d;
+}
+
+.description {
+  font-size: 16px;
+  color: #344563;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.skillset:not(:first-child) {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.language-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-title-container h4 {
+  font-size: 24px;
+  color: #000;
+}
+
+.language-title-container i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.languages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  background-color: #f7f7f9;
+  padding: 9px 12px;
+  border-radius: 8px;
+}
+
+.language img {
+  margin-right: 18px;
+}
+
+.language span {
+  font-size: 15px;
+  color: #253858;
 }
