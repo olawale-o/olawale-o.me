@@ -371,6 +371,25 @@ fieldset {
   border: 1px solid  #cfd8dc;
 }
 
+.btn-submit-form {
+  outline: none;
+  background: #fff;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-submit-form:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
 .home-indicator {
   background-color: #0d151e;
   height: 4px;
