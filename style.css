@@ -317,15 +317,14 @@ body {
   border-top-left-radius: 125px;
   width: 100%;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 50px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form {
   padding: 0 24px 0 24px;
-  margin: 21px 0 0 0;
+  margin: 21px 0 50px 0;
   box-sizing: border-box;
   background-image: url("assets/contact-bg.png");
   background-repeat: no-repeat;
