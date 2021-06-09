@@ -141,10 +141,7 @@ body {
   padding: 16px;
   display: block;
   text-decoration: none;
-}
-
-.post-container:hover {
-  border: 1px solid #6070ff;
+  pointer-events: none;
 }
 
 .image {
@@ -240,6 +237,7 @@ body {
   transition: all 0.5s;
   cursor: pointer;
   box-sizing: border-box;
+  pointer-events: auto;
 }
 
 .btn-project:hover {
@@ -344,14 +342,15 @@ body {
   border-top-left-radius: 125px;
   width: 100%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 50px;
+  justify-items: center;
 }
 
 .contact-form {
   padding: 0 24px 0 24px;
-  margin: 21px 0 50px 0;
+  margin: 21px 0 0 0;
   box-sizing: border-box;
   background-image: url("assets/contact-bg.png");
   background-repeat: no-repeat;
@@ -547,9 +546,9 @@ body {
 
   .contact-form {
     background-image: url("assets/contact-bg-desktop.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   form {
