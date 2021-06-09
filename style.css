@@ -554,6 +554,7 @@ body {
 
   form {
     text-align: center;
+    width: 400px;
   }
 
   .home-indicator {
