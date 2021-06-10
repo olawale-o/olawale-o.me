@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 html,
 body {
@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #e5e5e5;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
 }
 
@@ -39,6 +39,19 @@ body {
 
 .header img {
   width: 120px;
+  animation: logo 1.2s ease-in-out 3s 1 forwards;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .nav {
@@ -154,6 +167,11 @@ body {
   object-fit: cover;
   margin: 0 0 20px 0;
   box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05);
 }
 
 .title {
@@ -209,6 +227,11 @@ body {
   line-height: 24px;
   color: #344563;
   box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+}
+
+.text:hover {
+  transform: translateX(5%);
 }
 
 .tags {
@@ -397,7 +420,7 @@ body {
   outline: none;
   box-sizing: border-box;
   border-radius: 8px;
-  border: 1px solid  #cfd8dc;
+  border: 1px solid #cfd8dc;
 }
 
 textarea {
