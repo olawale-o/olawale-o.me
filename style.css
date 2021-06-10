@@ -396,6 +396,10 @@ body {
   border: 1px solid  #cfd8dc;
 }
 
+textarea {
+  resize: none;
+}
+
 .home-indicator {
   background-color: #0d151e;
   height: 4px;
@@ -515,18 +519,24 @@ body {
   }
 
   .about-myself {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
     min-height: auto;
   }
 
   .about-myself .top {
-    margin: 0 0 0 0;
-    flex: 1 1 50%;
+    margin-bottom: 0;
   }
 
   .skillsets {
-    flex: 1 1 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .language-title-container h4 {
+    padding: 0;
+    margin: 0 0 24px 0;
   }
 
   .languages-list {
