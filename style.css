@@ -39,6 +39,21 @@ body {
 
 .header img {
   width: 120px;
+  animation: logo 1.2s ease-in-out 3s 1 forwards;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .nav {
