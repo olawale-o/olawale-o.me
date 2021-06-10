@@ -541,6 +541,8 @@ textarea {
   .language-title-container h4 {
     padding: 0;
     margin: 0 0 24px 0;
+    color: #344563;
+    font-size: 20px;
   }
 
   .languages-list {
