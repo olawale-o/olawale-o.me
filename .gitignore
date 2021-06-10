@@ -2,3 +2,4 @@
 .stylelintrc.json
 package-lock.json
 .hintrc
+style_errors.txt
