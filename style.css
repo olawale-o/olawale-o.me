@@ -524,7 +524,7 @@ textarea {
 
   .about-myself {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     grid-column-gap: 20px;
     min-height: auto;
   }
