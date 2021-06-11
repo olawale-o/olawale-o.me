@@ -39,7 +39,7 @@ body {
 
 .header img {
   width: 120px;
-  animation: logo 1.2s ease-in-out 3s 1 forwards;
+  animation: logo 1.2s ease-in-out 1s 1 forwards;
 }
 
 @keyframes logo {
@@ -113,7 +113,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .about-body:hover {
@@ -234,7 +234,7 @@ body {
   line-height: 24px;
   color: #344563;
   box-sizing: border-box;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .text:hover {
