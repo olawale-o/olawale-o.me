@@ -169,6 +169,11 @@ body {
   object-fit: cover;
   margin: 0 0 20px 0;
   box-sizing: border-box;
+  transition: transform  0.5s ease-in-out;
+}
+
+.image:hover{
+  transform: scale(1.05);
 }
 
 .title {
@@ -224,6 +229,11 @@ body {
   line-height: 24px;
   color: #344563;
   box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+}
+
+.text:hover{
+  transform: translateX(5%);
 }
 
 .tags {
