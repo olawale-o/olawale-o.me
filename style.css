@@ -268,7 +268,9 @@ body {
   font-weight: bolder;
   padding: 10px;
   border-radius: 8px;
-  transition: color 0.5s ease-in-out, background 0.5s ease-in-out,
+  transition:
+    color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out;
   cursor: pointer;
   box-sizing: border-box;
@@ -589,6 +591,11 @@ textarea {
 
   .contact-text {
     width: 40%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .contact-text:hover {
+    transform: translateX(5%);
   }
 
   .contact-form {
