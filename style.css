@@ -113,6 +113,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-body:hover {
+  transform: translateX(5%);
 }
 
 .link {
