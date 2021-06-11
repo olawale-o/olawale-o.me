@@ -39,16 +39,12 @@ body {
 
 .header img {
   width: 120px;
-  animation: logo 1.2s ease-in-out 3s 1 forwards;
+  animation: logo 1.2s ease-in-out 2s 1 forwards;
 }
 
 @keyframes logo {
   0% {
     transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
   }
 
   100% {
@@ -268,7 +264,10 @@ body {
   font-weight: bolder;
   padding: 10px;
   border-radius: 8px;
-  transition: all 0.5s;
+  transition:
+    color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
   cursor: pointer;
   box-sizing: border-box;
   pointer-events: auto;
@@ -588,6 +587,11 @@ textarea {
 
   .contact-text {
     width: 40%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .contact-text:hover {
+    transform: translateX(5%);
   }
 
   .contact-form {
