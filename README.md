@@ -14,6 +14,9 @@ Desktop Version
 - HTML
 - CSS
 
+# Live Demo
+Vist this [link](https://olawale-o.github.io/portfolio-mobile-version/) for the demo
+
 # Getting started
 
 ## To get a local copy of this repository kindly follow the steps below.
