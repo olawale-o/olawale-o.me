@@ -119,7 +119,6 @@ a {
   left: 0;
   display: flex;
   flex-direction: column;
-  display: none;
   visibility: hidden;
 }
 
@@ -140,7 +139,8 @@ main.open-modal .main-content {
 }
 
 main.active .overlay,
-main.active .nav-list-mobile {
+main.active .nav-list-mobile,
+main.active .cancel-menu {
   display: block;
   visibility: visible;
 }
@@ -150,6 +150,8 @@ main.active .nav-list-mobile {
   top: 50px;
   right: 50px;
   z-index: 1000;
+  display: none;
+  visibility: hidden;
 }
 
 .close-icon {
@@ -338,7 +340,9 @@ main.active .nav-list-mobile {
   font-weight: bolder;
   padding: 10px;
   border-radius: 8px;
-  transition: color 0.5s ease-in-out, background 0.5s ease-in-out,
+  transition:
+    color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out;
   cursor: pointer;
   box-sizing: border-box;
