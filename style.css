@@ -17,6 +17,14 @@ body {
   line-height: 1.6;
 }
 
+main {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
 .ms {
   display: none;
   visibility: hidden;
