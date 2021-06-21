@@ -133,6 +133,31 @@ a {
   color: #fff;
 }
 
+main.active .main-content,
+main.open-modal .main-content {
+  filter: blur(4px);
+  overflow: hidden;
+}
+
+main.active .overlay,
+main.active .nav-list-mobile {
+  display: block;
+  visibility: visible;
+}
+
+.cancel-menu {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.close-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .profile-section {
   background-image: url("assets/header-bg.png");
   background-repeat: no-repeat;
@@ -313,9 +338,7 @@ a {
   font-weight: bolder;
   padding: 10px;
   border-radius: 8px;
-  transition:
-    color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
+  transition: color 0.5s ease-in-out, background 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out;
   cursor: pointer;
   box-sizing: border-box;
