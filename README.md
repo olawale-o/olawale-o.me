@@ -14,6 +14,9 @@ Desktop Version
 - HTML
 - CSS
 
+# Live Demo
+Visit this [link](https://olawale-o.github.io/portfolio-mobile-version/) for the demo
+
 # Getting started
 
 ## To get a local copy of this repository kindly follow the steps below.
@@ -22,7 +25,7 @@ Desktop Version
 - Click on the clipboard icon on the extreme right of the dropdown to copy the repository link
 - In your local PC, open your terminal or command prompt in the folder you would like to clone this repository into
 - Type `git clone (copied link)` on the currently opened terminal or command prompt
-- Remember to change change `(copied link)` to `git@github.com:olawale-o/portfolio-mobile-version.git` which is the name of the repository
+- Remember to change `(copied link)` to `git@github.com:olawale-o/portfolio-mobile-version.git` which is the name of the repository
 
 # Authors
 
