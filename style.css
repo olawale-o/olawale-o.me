@@ -132,6 +132,15 @@ a {
   color: #fff;
 }
 
+.cancel-menu {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+  display: none;
+  visibility: hidden;
+}
+
 main.active .main-content,
 main.open-modal .main-content {
   filter: blur(4px);
@@ -143,15 +152,6 @@ main.active .nav-list-mobile,
 main.active .cancel-menu {
   display: block;
   visibility: visible;
-}
-
-.cancel-menu {
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  z-index: 1000;
-  display: none;
-  visibility: hidden;
 }
 
 .close-icon {
