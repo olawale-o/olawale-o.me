@@ -92,6 +92,47 @@ a {
   border: 2px solid #6070ff;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  background: #6070ff;
+  display: none;
+  visibility: hidden;
+  pointer-events: all;
+}
+
+.nav-list-mobile {
+  list-style: none;
+  padding: 100px 0 0 24px;
+  margin: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  visibility: hidden;
+}
+
+.nav-list-mobile li {
+  font-size: 32px;
+  margin: 0 0 40px 0;
+  position: relative;
+}
+
+.nav-list-mobile li a {
+  color: #fff;
+}
+
 .profile-section {
   background-image: url("assets/header-bg.png");
   background-repeat: no-repeat;
