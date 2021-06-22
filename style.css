@@ -25,11 +25,6 @@ a {
   text-decoration: none;
 }
 
-.ms {
-  display: none;
-  visibility: hidden;
-}
-
 .header-section {
   background-color: #fff;
   box-sizing: border-box;
@@ -141,8 +136,7 @@ a {
   visibility: hidden;
 }
 
-main.active .main-content,
-main.open-modal .main-content {
+main.active .main-content {
   filter: blur(4px);
   overflow: hidden;
 }
@@ -215,6 +209,12 @@ main.active .cancel-menu {
 .linkedin {
   width: 24px;
   height: 24px;
+}
+
+.projects {
+  list-style: none;
+  padding:0;
+  margin: 0;
 }
 
 .post-section {
@@ -571,16 +571,6 @@ textarea {
   .post-section {
     padding-left: 100px;
     padding-right: 100px;
-  }
-
-  .sm {
-    display: none;
-    visibility: hidden;
-  }
-
-  .ms {
-    display: inline-block;
-    visibility: visible;
   }
 
   .post-container {
