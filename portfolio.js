@@ -143,7 +143,7 @@ function toggleModal(project = null) {
     modalTitle.textContent = project.name;
     modalText.textContent = project.description;
     image.setAttribute('src', project.featuredImage);
-    image.setAttribute('alt', 'image');
+    image.setAttribute('alt', project.projectId);
     image.setAttribute('class', 'image');
     modalImage.appendChild(image);
     for (let i = 0; i < project.technologies.length; i += 1) {
