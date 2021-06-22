@@ -17,6 +17,14 @@ body {
   line-height: 1.6;
 }
 
+main {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
 .ms {
   display: none;
   visibility: hidden;
@@ -82,6 +90,74 @@ body {
 .bottom-line {
   width: 16px;
   border: 2px solid #6070ff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  background: #6070ff;
+  display: none;
+  visibility: hidden;
+  pointer-events: all;
+}
+
+.nav-list-mobile {
+  list-style: none;
+  padding: 100px 0 0 24px;
+  margin: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.nav-list-mobile li {
+  font-size: 32px;
+  margin: 0 0 40px 0;
+  position: relative;
+}
+
+.nav-list-mobile li a {
+  color: #fff;
+}
+
+.cancel-menu {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+  display: none;
+  visibility: hidden;
+}
+
+main.active .main-content,
+main.open-modal .main-content {
+  filter: blur(4px);
+  overflow: hidden;
+}
+
+main.active .overlay,
+main.active .nav-list-mobile,
+main.active .cancel-menu {
+  display: block;
+  visibility: visible;
+}
+
+.close-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .profile-section {
