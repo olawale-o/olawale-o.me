@@ -27,7 +27,7 @@ const projects = [
     featuredImage: 'assets/portfolio.png',
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink:'https://github.com/olawale-o/portfolio-mobile-version',
+    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
   },
 
   {
@@ -42,7 +42,7 @@ const projects = [
     featuredImage: 'assets/Snapshoot-Portfolio.png',
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink:'https://github.com/olawale-o/portfolio-mobile-version',
+    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
   },
 
   {
@@ -57,7 +57,7 @@ const projects = [
     featuredImage: 'assets/posts.png',
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink:'https://github.com/olawale-o/portfolio-mobile-version',
+    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
   },
 
   {
@@ -72,7 +72,7 @@ const projects = [
     featuredImage: 'assets/stories.png',
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink:'https://github.com/olawale-o/portfolio-mobile-version',
+    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
   },
 ];
 
@@ -121,3 +121,59 @@ for (let i = 0; i < projects.length; i += 1) {
   const project = createProject(projects[i], i);
   projectList.innerHTML += project;
 }
+
+const body = document.querySelector('body');
+const closeModal = document.querySelector('#closeModal');
+const modalTitle = document.querySelector('#modal-title');
+const modalText = document.querySelector('#modal-text');
+const modalImage = document.querySelector('#modal-image');
+const image = document.querySelector('#image');
+const modalTags = document.querySelector('#modal-tags');
+const modalSkills = document.querySelector('#modal-skills');
+const skillList = `
+<li class="proficiency">CANOPY</li>
+<li class="dot"></li>
+<li class="role">Back End Dev</li>
+<li class="dot"></li>
+<li class="year">2015</li>
+`;
+
+function toggleModal(project = null) {
+  if (body.style.overflow === '') {
+    body.style.overflow = 'hidden';
+    modalSkills.innerHTML = skillList;
+    modalTitle.textContent = project.name;
+    modalText.textContent = project.description;
+    image.setAttribute('src', project.featuredImage);
+    image.setAttribute('alt', 'image');
+    image.setAttribute('class', 'image');
+    modalImage.appendChild(image);
+    for (let i = 0; i < project.technologies.length; i += 1) {
+      const tag = document.createElement('li');
+      tag.setAttribute('class', 'tag');
+      tag.textContent = project.technologies[i];
+      modalTags.appendChild(tag);
+    }
+  } else {
+    body.style.overflow = '';
+    modalSkills.innerHTML = '';
+    modalTitle.textContent = '';
+    modalText.textContent = '';
+    image.parentNode.removeChild(image);
+    while (modalTags.firstChild) {
+      modalTags.removeChild(modalTags.firstChild);
+    }
+  }
+  main.classList.toggle('open-modal');
+}
+
+for (let i = 0; i < projects.length; i += 1) {
+  const project = document.querySelector(`#${projects[i].projectId}`);
+  project.addEventListener('click', () => {
+    toggleModal(projects[i]);
+  });
+}
+
+closeModal.addEventListener('click', () => {
+  toggleModal();
+});
