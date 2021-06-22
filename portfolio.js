@@ -133,6 +133,8 @@ const modalImage = document.querySelector('#modal-image');
 const image = document.querySelector('#image');
 const modalTags = document.querySelector('#modal-tags');
 const modalSkills = document.querySelector('#modal-skills');
+const liveLink = document.querySelector('#live-link');
+const sourceLink = document.querySelector('#source-link');
 
 function toggleModal(project = null) {
   if (body.style.overflow === '') {
@@ -150,6 +152,8 @@ function toggleModal(project = null) {
       tag.textContent = project.technologies[i];
       modalTags.appendChild(tag);
     }
+    liveLink.href = project.liveLink;
+    sourceLink.href = project.sourceLink;
   } else {
     body.style.overflow = '';
     modalSkills.innerHTML = '';
@@ -159,6 +163,8 @@ function toggleModal(project = null) {
     while (modalTags.firstChild) {
       modalTags.removeChild(modalTags.firstChild);
     }
+    liveLink.href = '#';
+    sourceLink.href = '#';
   }
   main.classList.toggle('open-modal');
 }
