@@ -622,8 +622,21 @@ textarea {
   }
 
   .modal {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+  }
+
+  .modal-content-body {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .modal-content-body .text {
+    padding-right: 30px;
+  }
+
+  .modal-btns .btn-project {
+    padding: 5px;
   }
 
   .profile-section {
