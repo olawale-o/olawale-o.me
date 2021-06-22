@@ -5,6 +5,8 @@ const portfolio = document.querySelector('#portfolio');
 const about = document.querySelector('#about');
 const contact = document.querySelector('#contact');
 
+const closeModal = document.querySelector('#closeModal');
+
 const selectors = [hamburger, close, portfolio, about, contact];
 
 for (let i = 0; i < selectors.length; i += 1) {
