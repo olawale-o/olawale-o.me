@@ -25,11 +25,6 @@ a {
   text-decoration: none;
 }
 
-.ms {
-  display: none;
-  visibility: hidden;
-}
-
 .header-section {
   background-color: #fff;
   box-sizing: border-box;
@@ -219,7 +214,7 @@ main.active .cancel-menu {
 
 .projects {
   list-style: none;
-  padding:0;
+  padding: 0;
   margin: 0;
 }
 
@@ -577,16 +572,6 @@ textarea {
   .post-section {
     padding-left: 100px;
     padding-right: 100px;
-  }
-
-  .sm {
-    display: none;
-    visibility: hidden;
-  }
-
-  .ms {
-    display: inline-block;
-    visibility: visible;
   }
 
   .post-container {
