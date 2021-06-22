@@ -5,6 +5,13 @@ const portfolio = document.querySelector('#portfolio');
 const about = document.querySelector('#about');
 const contact = document.querySelector('#contact');
 const projectList = document.querySelector('#projects');
+const skillList = `
+<li class="proficiency">CANOPY</li>
+<li class="dot"></li>
+<li class="role">Back End Dev</li>
+<li class="dot"></li>
+<li class="year">2015</li>
+`;
 
 const selectors = [hamburger, close, portfolio, about, contact];
 
@@ -96,11 +103,7 @@ function createProject(project, position) {
         <div class="right ${right}">
           <h4 class="title">${project.name}</h4>
           <ul class="skills">
-            <li class="proficiency">CANOPY</li>
-            <li class="dot"></li>
-            <li class="role">Back End Dev</li>
-            <li class="dot"></li>
-            <li class="year">2015</li>
+           ${skillList}
           </ul>
           <p class="text">
             ${project.description}
@@ -130,13 +133,6 @@ const modalImage = document.querySelector('#modal-image');
 const image = document.querySelector('#image');
 const modalTags = document.querySelector('#modal-tags');
 const modalSkills = document.querySelector('#modal-skills');
-const skillList = `
-<li class="proficiency">CANOPY</li>
-<li class="dot"></li>
-<li class="role">Back End Dev</li>
-<li class="dot"></li>
-<li class="year">2015</li>
-`;
 
 function toggleModal(project = null) {
   if (body.style.overflow === '') {
