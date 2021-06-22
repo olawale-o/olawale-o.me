@@ -5,22 +5,10 @@ const portfolio = document.querySelector('#portfolio');
 const about = document.querySelector('#about');
 const contact = document.querySelector('#contact');
 
-hamburger.addEventListener('click', () => {
-  main.classList.add('active');
-});
+const selectors = [hamburger, close, portfolio, about, contact];
 
-close.addEventListener('click', () => {
-  main.classList.remove('active');
-});
-
-portfolio.addEventListener('click', () => {
-  main.classList.toggle('active');
-});
-
-about.addEventListener('click', () => {
-  main.classList.toggle('active');
-});
-
-contact.addEventListener('click', () => {
-  main.classList.toggle('active');
-});
+for (let i = 0; i < selectors.length; i += 1) {
+  selectors[i].addEventListener('click', () => {
+    main.classList.toggle('active');
+  });
+}
