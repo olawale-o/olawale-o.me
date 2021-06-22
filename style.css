@@ -175,7 +175,6 @@ main.active .cancel-menu {
   height: auto;
   background: #fff;
   padding: 20px;
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -230,7 +229,7 @@ main.open-modal .main-content {
   width: 100%;
   background-color: #ebecf0;
   margin: 0 0 10px 0;
-} 
+}
 
 .profile-section {
   background-image: url("assets/header-bg.png");
