@@ -622,6 +622,11 @@ textarea {
     font-size: 15px;
   }
 
+  .modal {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .profile-section {
     background-image: url("assets/header-bg-desktop.png");
     background-size: contain;
