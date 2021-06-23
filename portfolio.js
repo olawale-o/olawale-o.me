@@ -180,3 +180,8 @@ for (let i = 0; i < projects.length; i += 1) {
 closeModal.addEventListener('click', () => {
   toggleModal();
 });
+
+const error = document.querySelector('#error');
+const form = document.querySelector('#contact-form');
+const fullName = document.querySelector('#full-name');
+const email = document.querySelector('#email');
