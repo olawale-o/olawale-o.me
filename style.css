@@ -25,11 +25,6 @@ a {
   text-decoration: none;
 }
 
-.ms {
-  display: none;
-  visibility: hidden;
-}
-
 .header-section {
   background-color: #fff;
   box-sizing: border-box;
@@ -160,6 +155,82 @@ main.active .cancel-menu {
   cursor: pointer;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0;
+  overflow: auto;
+  display: none;
+  visibility: hidden;
+}
+
+.modal {
+  box-sizing: border-box;
+  margin: 0;
+  height: auto;
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h4 {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-header .close-icon {
+  color: #67798e;
+}
+
+.modal-image {
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+main.active .overlay,
+main.active .nav-list-mobile {
+  display: block;
+  visibility: visible;
+}
+
+main.open-modal .overlay {
+  display: block;
+  visibility: visible;
+}
+
+main.open-modal .modal-overlay {
+  display: block;
+  visibility: visible;
+}
+
+main.open-modal .main-content {
+  filter: blur(4px);
+}
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: #ebecf0;
+  margin: 0 0 10px 0;
+}
+
 .profile-section {
   background-image: url("assets/header-bg.png");
   background-repeat: no-repeat;
@@ -215,6 +286,12 @@ main.active .cancel-menu {
 .linkedin {
   width: 24px;
   height: 24px;
+}
+
+.projects {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .post-section {
@@ -544,6 +621,24 @@ textarea {
     font-size: 15px;
   }
 
+  .modal {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .modal-content-body {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .modal-content-body .text {
+    padding-right: 30px;
+  }
+
+  .modal-btns .btn-project {
+    padding: 5px;
+  }
+
   .profile-section {
     background-image: url("assets/header-bg-desktop.png");
     background-size: contain;
@@ -571,16 +666,6 @@ textarea {
   .post-section {
     padding-left: 100px;
     padding-right: 100px;
-  }
-
-  .sm {
-    display: none;
-    visibility: hidden;
-  }
-
-  .ms {
-    display: inline-block;
-    visibility: visible;
   }
 
   .post-container {

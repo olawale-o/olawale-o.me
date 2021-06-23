@@ -92,126 +92,9 @@
               </ul>
           </section>
         </div>
-        <section class="post-section">
-          <div class="post-container">
-              <div class="left order-1">
-                  <img class="image sm"  src="assets/portfolio.png" alt="portfolio" />
-                  <img class="image ms" src="assets/first-snapshot-desktop.png" alt="first-snapshot-desktop" />
-              </div>
-              <div class="right order-2">
-                  <h4 class="title">Olawale</h4>
-                  <ul class="skills">
-                    <li class="proficiency">CANOPY</li>
-                    <li class="dot"></li>
-                    <li class="role">Back End Dev</li>
-                    <li class="dot"></li>
-                    <li class="year">2015</li>
-                  </ul>
-                  <p class="text">
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required.
-                  </p>
-                  <ul class="tags">
-                    <li class="tag">html</li>
-                    <li class="tag">css</li>
-                    <li class="tag">javascript</li>
-                  </ul>
-                  <button class="btn-project">See Project</button>
-              </div>
-          </div>
-        </section>
-        <section class="post-section">
-          <div class="post-container">
-            <div class="left order-2">
-              <img class="image sm" src="assets/stories.png" alt="stories" />
-              <img class="image ms" src="assets/second-snapshot-desktop.png" alt="second-snapshot-desktop" />
-            </div>
-          <div class="right order-1">
-              <h4 class="title">
-                  Multi-Post
-                  <br />
-                  Stories
-              </h4>
-              <ul class="skills">
-                  <li class="proficiency">CANOPY</li>
-                  <li class="dot"></li>
-                  <li class="role">Back End Dev</li>
-                  <li class="dot"></li>
-                  <li class="year">2015</li>
-              </ul>
-              <p class="text">
-                  A daily selection of privately personalized reads; no accounts or
-                  sign-ups required.
-              </p>
-              <ul class="tags">
-                  <li class="tag">html</li>
-                  <li class="tag">css</li>
-                  <li class="tag">javascript</li>
-              </ul>
-              <button class="btn-project">See Project</button>
-          </div>
-          </div>
-        </section>
-        <section class="post-section">
-          <div class="post-container">
-            <div class="left order-1">
-              <img class="image sm" src="assets/posts.png" alt="posts" />
-              <img class="image ms" src="assets/third-snapshot-desktop.png" alt="third-snapshot-desktop" />
-            </div>
-            <div class="right order-1">
-              <h4 class="title">Olawale</h4>
-              <ul class="skills">
-                  <li class="proficiency">CANOPY</li>
-                  <li class="dot"></li>
-                  <li class="role">Back End Dev</li>
-                  <li class="dot"></li>
-                  <li class="year">2015</li>
-              </ul>
-              <p class="text">
-                  A daily selection of privately personalized reads; no accounts or
-                  sign-ups required.
-              </p>
-              <ul class="tags">
-                  <li class="tag">html</li>
-                  <li class="tag">css</li>
-                  <li class="tag">javascript</li>
-              </ul>
-              <button class="btn-project">See Project</button>
-            </div>
-          </div>
-        </section>
-        <section class="post-section">
-          <div class="post-container">
-            <div class="left order-2">
-              <img class="image sm" src="assets/Snapshoot-Portfolio.png" alt="snapshot" />
-              <img class="image ms" src="assets/fourth-snapshot-desktop.png" alt="fourth-snapshot-desktop" />
-            </div>
-            <div class="right order-1">
-              <h4 class="title">
-                  Multi-Post
-                  <br />
-                  Stories
-                </h4>
-                <ul class="skills">
-                  <li class="proficiency">CANOPY</li>
-                  <li class="dot"></li>
-                  <li class="role">Back End Dev</li>
-                  <li class="dot"></li>
-                  <li class="year">2015</li>
-                </ul>
-                <p class="text">
-                  A daily selection of privately personalized reads; no accounts or
-                  sign-ups required.
-                </p>
-                <ul class="tags">
-                  <li class="tag">html</li>
-                  <li class="tag">css</li>
-                  <li class="tag">javascript</li>
-                </ul>
-                <button class="btn-project">See Project</button>
-            </div>
-          </div>
-        </section>
+        <ul class="projects" id="projects">
+          
+        </ul>
         <section class="about-section">
           <div class="about-myself">
             <div class="top">
@@ -369,8 +252,8 @@
             <div class="home-indicator"></div>
           </div>
         </section>
-    </div>
-    <div class="overlay" id="overlay"></div>
+      </div>
+      <div class="overlay" id="overlay"></div>
       <div class="nav-mobile">
         <div class="cancel-menu" id = "close">
           <i class='bx bx-x close-icon'></i>
@@ -386,6 +269,34 @@
               <a href="#" class="nav-link" id="contact">Contact</a>
           </li>
         </ul>
+      </div>
+      <div class="modal-overlay">
+        <div class="modal">
+          <div class="modal-header">
+            <h4 id="modal-title"></h4> <i class='bx bx-x close-icon' id="closeModal"></i>
+          </div>
+          <div class="modal-content">
+            <div class="modal-body">
+              <ul class="skills" id="modal-skills">
+              </ul>
+              <div class="modal-image" id="modal-image">
+              </div>
+              <div class="modal-content-body">
+                  <p class="text" id="modal-text">
+                  </p>
+                  <div class="modal-extra">
+                    <ul class="tags" id="modal-tags">
+                    </ul>
+                    <div class="hr"></div>
+                    <div class="modal-btns">
+                      <a href="#" id="live-link" class="btn-project">See live &nbsp; <img src="assets/live.png" alt="live"> </a>
+                      <a href="#" id="source-link" class="btn-project">See Source &nbsp; <img src="assets/bluegit.png" alt="github"></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script src="portfolio.js"></script>
