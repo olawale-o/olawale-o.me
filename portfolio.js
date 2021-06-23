@@ -201,3 +201,6 @@ form.addEventListener('submit', (event) => {
 });
 
 const message = document.querySelector('#message');
+
+const contactKey = 'CONTACT';
+const contactDetails = localStorage.getItem(contactKey);
