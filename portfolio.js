@@ -199,3 +199,5 @@ form.addEventListener('submit', (event) => {
     error.style.opacity = 0;
   }
 });
+
+const message = document.querySelector('#message');
