@@ -185,3 +185,17 @@ const error = document.querySelector('#error');
 const form = document.querySelector('#contact-form');
 const fullName = document.querySelector('#full-name');
 const email = document.querySelector('#email');
+
+form.addEventListener('submit', (event) => {
+  if (email.value.trim() !== email.value.trim().toLowerCase()) {
+    error.style.opacity = 1;
+    error.textContent = 'Please ensure email is in lower case';
+    event.preventDefault();
+  } else if (fullName.value.trim() !== fullName.value.trim().toLowerCase()) {
+    error.style.opacity = 1;
+    error.textContent = 'Please ensure name is in lower case';
+    event.preventDefault();
+  } else {
+    error.style.opacity = 0;
+  }
+});
