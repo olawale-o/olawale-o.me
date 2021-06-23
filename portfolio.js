@@ -130,7 +130,7 @@ const closeModal = document.querySelector('#closeModal');
 const modalTitle = document.querySelector('#modal-title');
 const modalText = document.querySelector('#modal-text');
 const modalImage = document.querySelector('#modal-image');
-const image = document.querySelector('#image');
+const image = document.createElement('img');
 const modalTags = document.querySelector('#modal-tags');
 const modalSkills = document.querySelector('#modal-skills');
 const liveLink = document.querySelector('#live-link');
@@ -145,6 +145,7 @@ function toggleModal(project = null) {
     image.setAttribute('src', project.featuredImage);
     image.setAttribute('alt', project.projectId);
     image.setAttribute('class', 'image');
+    image.setAttribute('id', 'image');
     modalImage.appendChild(image);
     for (let i = 0; i < project.technologies.length; i += 1) {
       const tag = document.createElement('li');
