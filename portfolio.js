@@ -207,6 +207,12 @@ form.addEventListener('submit', (event) => {
     error.textContent = 'Please ensure name is in lower case';
     event.preventDefault();
   } else {
+    const contactObj = {
+      fullName: fullName.value,
+      email: email.value,
+      message: message.value,
+    };
+    localStorage.setItem(contactKey, JSON.stringify(contactObj));
     error.style.opacity = 0;
   }
 });
