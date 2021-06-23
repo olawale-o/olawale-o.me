@@ -185,6 +185,17 @@ const error = document.querySelector('#error');
 const form = document.querySelector('#contact-form');
 const fullName = document.querySelector('#full-name');
 const email = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+const contactKey = 'CONTACT';
+const contactDetails = localStorage.getItem(contactKey);
+
+if (contactDetails) {
+  const contact = JSON.parse(contactDetails);
+  fullName.value = contact.fullName;
+  email.value = contact.email;
+  message.value = contact.message;
+}
 
 form.addEventListener('submit', (event) => {
   if (email.value.trim() !== email.value.trim().toLowerCase()) {
@@ -199,8 +210,3 @@ form.addEventListener('submit', (event) => {
     error.style.opacity = 0;
   }
 });
-
-const message = document.querySelector('#message');
-
-const contactKey = 'CONTACT';
-const contactDetails = localStorage.getItem(contactKey);
