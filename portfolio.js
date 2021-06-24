@@ -185,6 +185,18 @@ const error = document.querySelector('#error');
 const form = document.querySelector('#contact-form');
 const fullName = document.querySelector('#full-name');
 const email = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+const contactKey = 'CONTACT';
+window.onload = () => {
+  const contactDetails = localStorage.getItem(contactKey);
+  if (contactDetails) {
+    const contact = JSON.parse(contactDetails);
+    fullName.value = contact.fullName;
+    email.value = contact.email;
+    message.value = contact.message;
+  }
+};
 
 form.addEventListener('submit', (event) => {
   if (email.value.trim() !== email.value.trim().toLowerCase()) {
@@ -196,6 +208,12 @@ form.addEventListener('submit', (event) => {
     error.textContent = 'Please ensure name is in lower case';
     event.preventDefault();
   } else {
+    const contactObj = {
+      fullName: fullName.value,
+      email: email.value,
+      message: message.value,
+    };
+    localStorage.setItem(contactKey, JSON.stringify(contactObj));
     error.style.opacity = 0;
   }
 });

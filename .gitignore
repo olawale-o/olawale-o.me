@@ -4,3 +4,4 @@ package-lock.json
 .hintrc
 style_errors.txt
 .eslintrc.json
+.vscode
