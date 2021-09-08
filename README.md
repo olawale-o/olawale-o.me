@@ -8,6 +8,7 @@ ScreenShot
 # Built With
 - HTML
 - CSS
+- JAVASCRIPT
 
 # Live Demo
 Visit this [link](https://olawale-o.github.io/olawale-o.me/) for the demo
