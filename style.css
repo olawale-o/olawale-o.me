@@ -38,12 +38,24 @@ a {
   box-sizing: border-box;
   margin-bottom: 5px;
   padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  z-index: 900;
 }
 
-.header img {
-  width: 120px;
+.my-logo {
+  color: #6874fc;
+  font-size: 2rem;
   animation: logo 1.2s ease-in-out 2s 1 forwards;
 }
+
+/* .header img {
+  width: 120px;
+} */
 
 @keyframes logo {
   0% {
@@ -238,7 +250,8 @@ main.open-modal .main-content {
   width: 100%;
   min-height: 700px;
   box-sizing: border-box;
-  padding: 24px;
+  padding: 5rem 24px 24px;
+  margin-top: 8rem;
 }
 
 .about-header {
@@ -629,6 +642,50 @@ textarea {
     text-decoration: none;
     color: #344563;
     font-size: 15px;
+    position: relative;
+  }
+
+  .nav-link.active::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #6874fc;
+    transform: translateX(-50%);
+  }
+
+  .nav-link::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: none;
+    transform: translateX(-50%);
+    transition: background 0.5s ease-in-out;
+  }
+
+  @keyframes link {
+    from {
+      bottom: -15px;
+    }
+
+    to {
+      bottom: -5px;
+      background: #6874fc;
+    }
+  }
+
+  .nav-link:not(.active):hover::after {
+    animation-name: link;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
   }
 
   .modal {

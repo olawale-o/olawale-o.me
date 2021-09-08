@@ -5,3 +5,4 @@ package-lock.json
 style_errors.txt
 .eslintrc.json
 .vscode
+package.json

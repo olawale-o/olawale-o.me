@@ -1,15 +1,10 @@
-# Portfolio Project
+# Portfolio
 
-> This is a project that follows the given template design found [here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=34%3A848), Both mobile and desktop version was designed for this project
+> This is a project that follows the given template design found [here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=34%3A848).
 
-Mobile Version
+ScreenShot
 
-![mobile-vesion](https://github.com/olawale-o/portfolio-mobile-version/blob/main/assets/mobile-screenshot.png?raw=true")
-
-Desktop Version
-
-![desktop-vesion](https://github.com/olawale-o/portfolio-mobile-version/blob/main/assets/desktop-screenshot.png?raw=true")
-
+![screenshot](https://github.com/olawale-o/olawale.me/blob/main/assets/screenshot.png?raw=true")
 # Built With
 - HTML
 - CSS
@@ -25,7 +20,7 @@ Visit this [link](https://olawale-o.github.io/portfolio-mobile-version/) for the
 - Click on the clipboard icon on the extreme right of the dropdown to copy the repository link
 - In your local PC, open your terminal or command prompt in the folder you would like to clone this repository into
 - Type `git clone (copied link)` on the currently opened terminal or command prompt
-- Remember to change `(copied link)` to `git@github.com:olawale-o/portfolio-mobile-version.git` which is the name of the repository
+- Remember to change `(copied link)` to `git@github.com:olawale-o/olawale.me.git` which is the name of the repository
 
 # Authors
 
@@ -38,7 +33,7 @@ Visit this [link](https://olawale-o.github.io/portfolio-mobile-version/) for the
 # Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page.](https://github.com/olawale-o/portfolio-mobile-version/issues)
+Feel free to check the [issues page.](https://github.com/olawale-o/olawale.me/issues)
 
 # Show your support
 Give a :star: if you like this project!
