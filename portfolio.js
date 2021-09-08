@@ -5,13 +5,14 @@ const portfolio = document.querySelector('#portfolio');
 const about = document.querySelector('#about');
 const contact = document.querySelector('#contact');
 const projectList = document.querySelector('#projects');
-const skillList = `
-<li class="proficiency">CANOPY</li>
-<li class="dot"></li>
-<li class="role">Back End Dev</li>
-<li class="dot"></li>
-<li class="year">2015</li>
-`;
+
+const createSkillList = (project, role, year) => (
+  `<li class="proficiency">${project}</li>
+  <li class="dot"></li>
+  <li class="role">${role}</li>
+  <li class="dot"></li>
+  <li class="year">${year}</li>`
+);
 
 const selectors = [hamburger, close, portfolio, about, contact];
 
@@ -35,6 +36,7 @@ const projects = [
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
     sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
+    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
   },
 
   {
@@ -50,6 +52,7 @@ const projects = [
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
     sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
+    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
   },
 
   {
@@ -65,6 +68,7 @@ const projects = [
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
     sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
+    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
   },
 
   {
@@ -80,6 +84,7 @@ const projects = [
     technologies: ['html', 'css', 'javascript'],
     liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
     sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
+    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
   },
 ];
 
@@ -94,29 +99,29 @@ function createProject(project, position) {
     right = 'order-1';
   }
   const techItem = `
-<li>
-  <section class="post-section">
-    <div class="post-container">
-        <div class="left ${left}">
-            <img class="image sm"  src="${project.featuredImage}" alt="portfolio" />
-        </div>
-        <div class="right ${right}">
-          <h4 class="title">${project.name}</h4>
-          <ul class="skills">
-           ${skillList}
-          </ul>
-          <p class="text">
-            ${project.description}
-          </p>
-          <ul class="tags" id="tags">
-            ${project.technologies.map((tech) => `<li class="tag">${tech}</li>`).join('')}
-          </ul>
-          <button class="btn-project" id="${project.projectId}">See Project</button>
-        </div>
-    </div>
-  </section>
-</li>
-`;
+  <li>
+    <section class="post-section">
+      <div class="post-container">
+          <div class="left ${left}">
+              <img class="image sm"  src="${project.featuredImage}" alt="portfolio" />
+          </div>
+          <div class="right ${right}">
+            <h4 class="title">${project.name}</h4>
+            <ul class="skills">
+            ${project.skillList}
+            </ul>
+            <p class="text">
+              ${project.description}
+            </p>
+            <ul class="tags" id="tags">
+              ${project.technologies.map((tech) => `<li class="tag">${tech}</li>`).join('')}
+            </ul>
+            <button class="btn-project" id="${project.projectId}">See Project</button>
+          </div>
+      </div>
+    </section>
+  </li>
+  `;
   return techItem;
 }
 
@@ -139,7 +144,7 @@ const sourceLink = document.querySelector('#source-link');
 function toggleModal(project = null) {
   if (body.style.overflow === '') {
     body.style.overflow = 'hidden';
-    modalSkills.innerHTML = skillList;
+    modalSkills.innerHTML = project.skillList;
     modalTitle.textContent = project.name;
     modalText.textContent = project.description;
     image.setAttribute('src', project.featuredImage);

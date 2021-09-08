@@ -50,6 +50,7 @@ a {
 .my-logo {
   color: #6874fc;
   font-size: 2rem;
+  font-weight: bold;
   animation: logo 1.2s ease-in-out 2s 1 forwards;
 }
 
