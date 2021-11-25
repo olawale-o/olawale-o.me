@@ -25,17 +25,14 @@ for (let i = 0; i < selectors.length; i += 1) {
 const projects = [
   {
     projectId: 'projectOne',
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    featuredImage: 'assets/portfolio.png',
-    technologies: ['html', 'css', 'javascript'],
-    liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
+    name: 'Rails Budget App',
+    description: 'A mobile web application where you can manage your budget: '
+    + 'you have a list of transactions associated with a category, so that you '
+    + 'can see how much money you spent and on what.',
+    featuredImage: 'assets/rails_budget_app.png',
+    technologies: ['ruby', 'rails', 'devise', 'rspec', 'postgresql', 'cancancan'],
+    liveLink: 'https://morning-stream-82344.herokuapp.com/',
+    sourceLink: 'https://github.com/olawale-o/rails_budget_app/tree/develop',
     skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
   },
 
