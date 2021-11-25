@@ -30,10 +30,10 @@ const projects = [
     + 'you have a list of transactions associated with a category, so that you '
     + 'can see how much money you spent and on what.',
     featuredImage: 'assets/rails_budget_app.png',
-    technologies: ['ruby', 'rails', 'devise', 'rspec', 'postgresql', 'cancancan'],
+    technologies: ['ruby-on-rails', 'devise', 'rspec', 'postgresql', 'cancancan'],
     liveLink: 'https://morning-stream-82344.herokuapp.com/',
     sourceLink: 'https://github.com/olawale-o/rails_budget_app/tree/develop',
-    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
+    skillList: createSkillList('RUBY', 'Back End Dev', 2021),
   },
 
   {
