@@ -409,6 +409,7 @@ main.open-modal .main-content {
   margin-bottom: 20px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
@@ -416,6 +417,7 @@ main.open-modal .main-content {
   padding: 4px 12px 4px 12px;
   font-size: 12px;
   margin-right: 12px;
+  margin-bottom: 10px;
   background-color: #ebebff;
   color: #6070ff;
   border-radius: 8px;
