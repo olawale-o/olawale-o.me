@@ -25,6 +25,17 @@ for (let i = 0; i < selectors.length; i += 1) {
 const projects = [
   {
     projectId: 'projectOne',
+    name: 'Doctor\'s Appointment',
+    description: 'A responsive web application where you can book an appointment with a doctor: ',
+    featuredImage: 'assets/doctor.png',
+    technologies: ['ruby-on-rails', 'devise-jwt', 'rspec', 'postgresql', 'cancancan', 'react', 'redux'],
+    liveLink: 'https://upbeat-hawking-cf5580.netlify.app/',
+    sourceLink: 'https://github.com/olawale-o/react_appointment',
+    skillList: createSkillList('ROR', 'React', 'Full-Stack Dev', 2021),
+  },
+
+  {
+    projectId: 'projectTwo',
     name: 'Rails Budget App',
     description: 'A mobile web application where you can manage your budget: '
     + 'you have a list of transactions associated with a category, so that you '
@@ -34,22 +45,6 @@ const projects = [
     liveLink: 'https://morning-stream-82344.herokuapp.com/',
     sourceLink: 'https://github.com/olawale-o/rails_budget_app/tree/develop',
     skillList: createSkillList('RUBY', 'Back End Dev', 2021),
-  },
-
-  {
-    projectId: 'projectTwo',
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    featuredImage: 'assets/Snapshoot-Portfolio.png',
-    technologies: ['html', 'css', 'javascript'],
-    liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
-    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
   },
 
   {
