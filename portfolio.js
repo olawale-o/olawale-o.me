@@ -42,7 +42,7 @@ const projects = [
     + 'can see how much money you spent and on what.',
     featuredImage: 'assets/rails_budget_app.png',
     technologies: ['ruby-on-rails', 'devise', 'rspec', 'postgresql', 'cancancan'],
-    liveLink: 'https://morning-stream-82344.herokuapp.com/',
+    liveLink: 'https://afternoon-peak-82060.herokuapp.com/',
     sourceLink: 'https://github.com/olawale-o/rails_budget_app/tree/develop',
     skillList: createSkillList('RUBY', 'Back End Dev', 2021),
   },
