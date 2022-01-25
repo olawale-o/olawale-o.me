@@ -5,6 +5,7 @@ const portfolio = document.querySelector('#portfolio');
 const about = document.querySelector('#about');
 const contact = document.querySelector('#contact');
 const projectList = document.querySelector('#projects');
+const dropdownBtns = document.querySelectorAll('.dropdown-btn');
 
 const createSkillList = (project, role, year) => (
   `<li class="proficiency">${project}</li>
@@ -213,4 +214,11 @@ form.addEventListener('submit', (event) => {
     localStorage.setItem(contactKey, JSON.stringify(contactObj));
     error.style.opacity = 0;
   }
+});
+
+dropdownBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('active');
+    btn.parentElement.nextElementSibling.classList.toggle('open');
+  });
 });

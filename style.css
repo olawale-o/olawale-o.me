@@ -487,8 +487,68 @@ main.open-modal .main-content {
   margin: 0 0 20px 0;
 }
 
+.skillset {
+  overflow: hidden;
+}
+
 .skillset:not(:first-child) {
   border-bottom: 1px solid #dfe1e6;
+}
+
+.languages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skillset .languages-list {
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.skillset .dropdown-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-btn i {
+  margin-left: -2px;
+}
+
+.dropdown-btn .right {
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-btn .down {
+  opacity: 0;
+  display: none;
+}
+
+.dropdown-btn.active .down {
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-btn.active .right {
+  opacity: 0;
+  display: none;
+}
+
+.languages-list.open {
+  height: auto;
+  opacity: 1;
 }
 
 .language-title-container {
@@ -505,12 +565,6 @@ main.open-modal .main-content {
 .language-title-container i {
   font-size: 30px;
   cursor: pointer;
-}
-
-.languages-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .language {
