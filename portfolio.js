@@ -50,34 +50,14 @@ const projects = [
 
   {
     projectId: 'projectThree',
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    featuredImage: 'assets/posts.png',
-    technologies: ['html', 'css', 'javascript'],
-    liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
-    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
-  },
-
-  {
-    projectId: 'projectFour',
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    featuredImage: 'assets/stories.png',
-    technologies: ['html', 'css', 'javascript'],
-    liveLink: 'https://olawale-o.github.io/portfolio-mobile-version/',
-    sourceLink: 'https://github.com/olawale-o/portfolio-mobile-version',
-    skillList: createSkillList('CANNOPY', 'Back End Dev', 2015),
+    name: 'Stock Metrics',
+    description: 'A metric based web app that gives real-time updates on'
+    + 'volume of shares traded in the stock market',
+    featuredImage: 'assets/stockmarket.png',
+    technologies: ['react', 'jsx', 'redux'],
+    liveLink: 'https://kind-goodall-4886a1.netlify.app/',
+    sourceLink: 'https://github.com/olawale-o/react-metrics',
+    skillList: createSkillList('React', 'Front End', 2021),
   },
 ];
 
